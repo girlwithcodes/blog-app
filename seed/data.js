@@ -1,5 +1,5 @@
 import db from '../db/connection.js'
-import Project from '../models/project.js'
+import Post from '../models/post.js'
 import faker from 'faker'
 
 const insertData = async () => {
@@ -14,8 +14,8 @@ const insertData = async () => {
     }
 
   })
-  await Project.insertMany(projects)
-  console.log(`Created projects!`)
+  await Post.insertMany(posts)
+  console.log(`Created posts!`)
 
   db.close()
 }

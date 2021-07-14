@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 let MONGODB_URI =
   process.env.PROD_MONGODB ||
-  'mongodb://127.0.0.1:27017/projectsDevDatabase'
+  'mongodb://127.0.0.1:27017/postsDevDatabase'
 
 // Uncomment to debug Mongoose queries
 // mongoose.set('debug', true)
