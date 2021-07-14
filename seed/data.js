@@ -8,9 +8,9 @@ const insertData = async () => {
   const posts = [...Array(100)].map(item => {
     return {
       title: faker.lorem.sentence(),
-      image_url: faker.internet.url(),
+      imgURL: faker.internet.url(),
       content: faker.lorem.paragraph(),
-      author: faker.name()
+      author: faker.name.findName()
     }
 
   })
