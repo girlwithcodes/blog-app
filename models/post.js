@@ -11,4 +11,4 @@ const Post = new Schema(
   { timestamps: true },
 )
 
-export default mongoose.model('products', Product)
+export default mongoose.model('posts', Post)
