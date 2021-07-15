@@ -15,7 +15,6 @@ function App() {
     const fetchPosts = async() => {
       const resp = await getPosts();
       setPosts(resp);
-      console.log(resp);
     }
     fetchPosts();
   }, [toggleFetch]);
