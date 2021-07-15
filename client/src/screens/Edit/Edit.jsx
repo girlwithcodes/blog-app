@@ -68,7 +68,7 @@ const PostEdit = () => {
             cols={78}
             placeholder='Text'
             value={post.content}
-            name='text'
+            name='content'
             required
             onChange={handleChange}
           />
