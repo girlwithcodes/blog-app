@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/post">Posts</Link>
+      <Link to="/posts">Posts</Link>
       <Link to="/create">Create</Link>
     </nav>
   )
