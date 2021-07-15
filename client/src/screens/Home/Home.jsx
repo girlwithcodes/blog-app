@@ -2,9 +2,10 @@ import BlogCard from "../../components/BlogCard/BlogCard.jsx";
 import Layout from "../../components/Layout/Layout.jsx";
 
 function Home({ posts }) {
-  const CARDS = posts
-    .reverse()
-    .map((post, index) => (index < 8 ? <BlogCard post={post} key={post._id} /> : null));
+  const CARDS =
+  [...posts].reverse().map((post, index) =>
+  index < 7 ? <BlogCard post={post} key={post._id} /> : null
+);
 
   return (
     <Layout>
