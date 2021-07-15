@@ -21,11 +21,13 @@
   },
   "homepage": "https://github.com/girlwithcodes/blog-app#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "faker": "^5.5.3",
     "mongoose": "^5.13.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
