@@ -33,7 +33,7 @@ const PostDetail = (props) => {
                     <div className="author">{post.author}</div>
                     <div className="button-container">
                         <button className="edit-button"><Link className="edit-link" to={`/edit/${post._id}`}>Edit</Link></button>
-                        <button className="delete-button" onClick={() => deletePost(post._id)} to={'/'}>Delete</button>
+                        <button className="delete-button"><Link onClick={() => deletePost(post._id)} to={'/'}>Delete</Link></button>
                     </div>
                 </div>
             </div>
