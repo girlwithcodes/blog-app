@@ -1,5 +1,8 @@
 import { useState } from "react";
-import {  } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { createPost } from '../../services/posts'
+//TODO: Add Layout
+import './Create.css'
 
 const Postcreate = (props) => {
   const [post, setPost] = useState({
@@ -9,7 +12,7 @@ const Postcreate = (props) => {
     author: "",
   });
 
-  // const [isCreate, setCreated] = useState(false)
+  const [isCreated, setCreated] = useState(false)
 
   const handleChange = (e) => {
     const {name, value } = e.target
@@ -19,8 +22,18 @@ const Postcreate = (props) => {
     })
   }
 
+  const handSubmit = async (e) => {
+    e.preventDefault()
+    const created = await createPost(post)
+    setCreated({ created })
+  }
+
+  if (isCreated) {
+    return <Redirect to={`/`} />
+  }
+
   return (
-    <form>
+    <form onSubmit={handSubmit}>
       <label htmlFor="title">Title: </label>
       <input type="text" name="tile" id="title" required autoFocus onChange={handleChange} />
       <label htmlFor="imgURL">Image: </label>
