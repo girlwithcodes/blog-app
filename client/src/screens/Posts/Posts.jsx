@@ -5,7 +5,10 @@ function Posts(props) {
   const posts = props.posts;
   const CARDS = posts.map((post) => {
     return (
-      <BlogCard post={post}/>
+
+
+      <BlogCard post={post} key={post._id} />
+
     )
   })
   return (
