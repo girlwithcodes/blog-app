@@ -26,6 +26,8 @@ const Postcreate = (props) => {
     e.preventDefault()
     const created = await createPost(post)
     setCreated({ created })
+    props.setToggleFetch((curr) => !curr)
+    
   }
 
   if (isCreated) {
@@ -35,7 +37,7 @@ const Postcreate = (props) => {
   return (
     <form onSubmit={handSubmit}>
       <label htmlFor="title">Title: </label>
-      <input type="text" name="tile" id="title" required autoFocus onChange={handleChange} />
+      <input type="text" name="title" id="title" required autoFocus onChange={handleChange} />
       <label htmlFor="imgURL">Image: </label>
       <input type="url" name="imgURL" id="imgURL" placeholder="URL" required onChange={handleChange} />
       <label htmlFor="content">Content: </label>
