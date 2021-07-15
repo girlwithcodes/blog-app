@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import { createPost } from "../../services/posts";
-import Layout from "../../components/Layout/Layout";
 import "./Create.css";
 
 const Postcreate = (props) => {
@@ -11,6 +10,7 @@ const Postcreate = (props) => {
     imgURL: "",
     content: "",
     author: "",
+    //TODO match edit order
   });
 
   const [isCreated, setCreated] = useState(false);
