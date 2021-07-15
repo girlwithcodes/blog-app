@@ -10,6 +10,7 @@ function Layout(props) {
       </div>
     <Footer />
   </div>
-
   )
 }
+
+export default Layout;
