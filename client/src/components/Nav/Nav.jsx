@@ -1,4 +1,4 @@
-funtion Nav() {
+function Nav() {
   return (
     <nav>
       Nav
