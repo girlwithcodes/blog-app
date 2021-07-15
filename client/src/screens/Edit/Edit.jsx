@@ -4,10 +4,10 @@ import { useParams, Redirect } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost, updatePost } from '../../services/posts'
 
-const PostEdit = (props) => {
+const PostEdit = () => {
   const [post, setPost] = useState({
     imgURL: '',
-    text: '',
+    content: '',
     title: '',
     author: '',
   })
@@ -67,7 +67,7 @@ const PostEdit = (props) => {
             rows={10}
             cols={78}
             placeholder='Text'
-            value={post.text}
+            value={post.content}
             name='text'
             required
             onChange={handleChange}
@@ -83,7 +83,7 @@ const PostEdit = (props) => {
           <input
             className='input-author'
             placeholder='Author'
-            value={post.text}
+            value={post.author}
             name='author'
             required
             autoFocus
