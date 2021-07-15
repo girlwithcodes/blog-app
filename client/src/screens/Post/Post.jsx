@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './PostDetail.css'
+// import './PostDetail.css'
 import Layout from '../../components/Layout/Layout'
 import { getPost, deletePost } from '../../services/posts'
 import { useParams, Link } from 'react-router-dom'
@@ -11,9 +11,9 @@ const PostDetail = (props) => {
     const { id } = useParams()
 
     useEffect(() => {
-        const fetchProduct = async () => {
+        const fetchPost = async () => {
             const post = await getPost(id)
-            setPost(product)
+            setPost(post)
             setLoaded(true)
         }
         fetchPost()
