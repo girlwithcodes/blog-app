@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './PostEdit.css'
+// import './PostEdit.css'
 import { useParams, Redirect } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost, updatePost } from '../../services/posts'
@@ -47,8 +47,8 @@ const PostEdit = (props) => {
         <div className='image-container'>
           <img
             className='edit-post-image'
-            src={product.imgURL}
-            alt={product.name}
+            src={post.imgURL}
+            alt={post.name}
           />
           <form onSubmit={handleSubmit}>
             <input
