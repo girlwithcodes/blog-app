@@ -41,4 +41,4 @@ const PostDetail = (props) => {
     )
 }
 
-export default ProductDetail
+export default PostDetail
