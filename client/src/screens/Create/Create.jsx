@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import {  } from "react-router-dom";
 
 const Postcreate = (props) => {
   const [post, setPost] = useState({
@@ -33,3 +33,5 @@ const Postcreate = (props) => {
     </form>
   );
 };
+
+export default Postcreate
