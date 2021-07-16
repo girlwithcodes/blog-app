@@ -1,9 +1,54 @@
+#content {
+  height: 6rem;
+  width: 100%;
+}
 form {
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  margin: 3rem auto;
+  width: 100%;
+  /* height: 100%; */
+  
+}
+
+#form-button {
+  font-size: 2rem;
+  width: 10rem;
+  height: auto;
+}
+
+.form-button-center {
+  display: flex;
+  justify-content: center;
 }
 .form-outer-container {
+  border-left: solid 70px transparent;
+  border-right: solid 70px transparent;
+  border-bottom: solid 70px #fff;
+  box-shadow: 0 0 30px #333;
   display: flex;
+  font-size: 2rem;
   flex-direction: column;
-  width: 30vw;
+  justify-content: center;
+  width: 50vw;
+  height: auto;
+  margin: 3rem auto;
+}
+.form-inner-container {
+  margin: 3rem 0 0 0;
+}
+
+input {
+  font-size: 1.8rem;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.input-wrap {
+  margin: 0.8rem;
+}
+
+textarea {
+  resize: none;
 }
