@@ -2,3 +2,8 @@ form {
   display: flex;
   flex-direction: column;
 }
+.form-outer-container {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
