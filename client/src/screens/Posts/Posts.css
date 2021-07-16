@@ -1,0 +1,11 @@
+.posts-display {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts-title {
+  font-size: 64px;
+} 
