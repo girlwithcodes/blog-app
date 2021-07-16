@@ -3,7 +3,7 @@ import './BlogCard.css';
 function BlogCard({post}) {
   return (
     <Link to={`/post/${post._id}`}>
-      <div key={post._id} className="blog-card">
+      <div key={post._id} className="blog-card grow">
         <div className="blog-card-image-div">
           <img src={post.imgURL} alt={post.title} className="blog-card-image"/>
         </div>
