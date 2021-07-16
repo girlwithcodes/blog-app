@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-// import './PostEdit.css'
+import './Edit.css'
 import { useParams, Redirect } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost, updatePost } from '../../services/posts'
@@ -50,18 +50,24 @@ const PostEdit = () => {
             src={post.imgURL}
             alt={post.name}
           />
-          <form onSubmit={handleSubmit}>
-            <input
-              className='edit-input-image-link'
-              placeholder='Image Link'
-              value={post.imgURL}
-              name='imgURL'
-              required
-              onChange={handleChange}
-            />
-          </form>
         </div>
         <form className='edit-form' onSubmit={handleSubmit}>
+          <input
+            className='edit-input-image-link'
+            placeholder='Image Link'
+            value={post.imgURL}
+            name='imgURL'
+            required
+            onChange={handleChange}
+          />
+          <input
+            className='input-title'
+            placeholder='Title'
+            value={post.title}
+            name='title'
+            required
+            onChange={handleChange}
+          />
           <textarea
             className='textarea-text'
             rows={10}
@@ -72,14 +78,6 @@ const PostEdit = () => {
             required
             onChange={handleChange}
           />
-            <input
-              className='input-title'
-              placeholder='Title'
-              value={post.title}
-              name='title'
-              required
-              onChange={handleChange}
-            />
           <input
             className='input-author'
             placeholder='Author'

@@ -1,0 +1,14 @@
+.post-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.latest {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 5vh 0 3vh 0;
+  font-family: 'Judson', serif;
+}
