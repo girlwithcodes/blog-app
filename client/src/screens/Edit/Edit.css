@@ -1,0 +1,70 @@
+.edit-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 2vw;
+  margin-top: 10px;
+  
+ 
+}
+
+.edit-input-image-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-width: 50%;
+  width: 50rem;
+  margin-top: 45px;
+  
+}
+.edit-post-image {
+  height: 45vh;
+  border: black solid 8px;
+  
+}
+
+.post-edit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30vw;
+  justify-content: center;
+  margin:  0 auto;
+}
+.input-author {
+  border-width: 50%;
+  width: 50rem;
+  margin-top: 5%;
+}
+
+
+.input-title {
+  color: black;
+  border-width: 50%;
+  width: 50rem;
+  margin-top: 5%;
+  
+  
+}
+
+.save-button {
+  color: white;
+  background-color: #7395AE;
+  width: 40%;
+  height: 5vh;
+  margin: 0 auto;
+  margin-top: 8%;
+  
+}
+
+.textarea-text {
+  border-width: 50%;
+  width: 50rem;
+  margin-top: 5%;
+  padding: 5px;
+  
+  
+}
+
+
+
