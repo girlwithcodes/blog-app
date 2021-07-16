@@ -1,12 +1,28 @@
+#content {
+  height: 6rem;
+  width: 100%;
+}
 form {
-  /* align-content: center; */
   display: flex;
   flex-direction: column;
+  height: auto;
   margin-top: auto;
+  width: 100%;
+  height: 100%;
+
 }
 
+#form-button {
+  font-size: 2rem;
+  width: 10rem;
+  height: auto;
+}
+
+.form-button-center {
+  display: flex;
+  justify-content: center;
+}
 .form-outer-container {
-  /* align-items: center; */
   border-left: solid 70px transparent;
   border-right: solid 70px transparent;
   border-bottom: solid 70px #fff;
@@ -15,17 +31,21 @@ form {
   font-size: 2rem;
   flex-direction: column;
   justify-content: center;
-  width: 40vw;
-  height: 40vh;
+  width: 50vw;
+  height: auto;
   margin: 3rem auto;
 }
 
-
 input {
-font-size: 1.8rem;
-padding: .4rem;
+  font-size: 1.8rem;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.input-wrap {
+  margin: 0.8rem;
 }
 
 textarea {
-  margin: 1.5rem 0;
+  resize: none;
 }

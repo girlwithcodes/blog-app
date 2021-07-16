@@ -38,6 +38,7 @@ const Postcreate = (props) => {
     <Layout>
       <div className="form-outer-container">
         <form onSubmit={handSubmit}>
+          <div className="input-wrap">
           <label htmlFor="title">Title: </label>
           <input
             type="text"
@@ -47,6 +48,8 @@ const Postcreate = (props) => {
             autoFocus
             onChange={handleChange}
           />
+            </div>
+            <div className="input-wrap">
           <label htmlFor="imgURL">Image: </label>
           <input
             type="url"
@@ -56,6 +59,8 @@ const Postcreate = (props) => {
             required
             onChange={handleChange}
           />
+          </div>
+          <div className="input-wrap">
           <label htmlFor="content">Content: </label>
           <textarea
             type="text"
@@ -64,6 +69,8 @@ const Postcreate = (props) => {
             required
             onChange={handleChange}
           />
+          </div>
+          <div className="input-wrap">
           <label htmlFor="author">Author: </label>
           <input
             type="text"
@@ -72,7 +79,10 @@ const Postcreate = (props) => {
             required
             onChange={handleChange}
           />
-          <button type="submit">Post It!</button>
+          </div>
+          <div className="input-wrap form-button-center">
+          <button id="form-button" type="submit">Post It!</button>
+          </div>
         </form>
       </div>
     </Layout>
