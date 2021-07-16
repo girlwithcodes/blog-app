@@ -37,7 +37,8 @@ const Postcreate = (props) => {
   return (
     <Layout>
       <div className="form-outer-container">
-        <form onSubmit={handSubmit}>
+        <div className="form-inner-container">
+          <form onSubmit={handSubmit}>
           <div className="input-wrap">
           <label htmlFor="title">Title: </label>
           <input
@@ -84,6 +85,7 @@ const Postcreate = (props) => {
           <button id="form-button" type="submit">Post It!</button>
           </div>
         </form>
+        </div>
       </div>
     </Layout>
   );
