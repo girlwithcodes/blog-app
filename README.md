@@ -3,7 +3,7 @@
 ## Team: Salty (group 4)
 >Heather, Allwyn, Jubran, Miguel
 
-##WireFrame
+## WireFrame
 ![alt text](readmeImg/Home.png)
 ![alt text](readmeImg/Detail.png)
 ![alt text](readmeImg/Edit.png)
